@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 
-const URI="mongodb+srv://pankaj:tF14JNCRsP7gHiP3@cluster0.weswsgh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const URI=process.env.MONGO_URL
 
 
 const connectDb=async()=>{
